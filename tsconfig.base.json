@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2018"
+  , "module": "NodeNext"
+  , "moduleResolution": "NodeNext"
+  , "strict": true
+  , "noImplicitOverride": true
+  , "noUnusedLocals": true
+  , "noUnusedParameters": true
+  , "baseUrl": "."
+  , "paths": {
+      "@src/*": ["src/*"]
+    , "@test/*": ["__tests__/*"]
+    }
+  , "plugins": [
+      { "transform": "typescript-transform-paths" }
+    , { "transform": "typescript-transform-paths", "afterDeclarations": true }
+    ]
+  }
+}
