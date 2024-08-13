@@ -46,7 +46,7 @@ const easeOut: EasingFunction
 const easeInOut: EasingFunction
 ```
 
-##### EasingsNet
+#### EasingsNet
 ```ts
 const easeInExponential: EasingFunction
 const easeOutExponential: EasingFunction
