@@ -40,6 +40,8 @@ const easeInOutCircular: EasingFunction
 
 #### CSS
 ```ts
+import * as CSS from 'extra-easing/css'
+
 const ease: EasingFunction
 const easeIn: EasingFunction
 const easeOut: EasingFunction
@@ -48,6 +50,8 @@ const easeInOut: EasingFunction
 
 #### EasingsNet
 ```ts
+import * as EasingsNet from 'extra-easing/easings-net'
+
 const easeInExponential: EasingFunction
 const easeOutExponential: EasingFunction
 const easeInOutExponential: EasingFunction
