@@ -139,7 +139,7 @@ function back(amplitude: number): EasingFunction
 
 #### elastic
 ```ts
-function elastic(params: {
+function elastic(params?: {
   oscillations?: number = 3
   springiness?: number = 3
 }): EasingFunction
@@ -147,7 +147,7 @@ function elastic(params: {
 
 #### bounce
 ```ts
-function bounce(params: {
+function bounce(params?: {
   bounces?: number = 3
   bounciness?: number = 2
 }): EasingFunction

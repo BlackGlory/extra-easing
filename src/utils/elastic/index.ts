@@ -13,9 +13,9 @@ import { exponential } from '@utils/exponential.js'
  * @see https://www.desmos.com/calculator/fiy9wgvaxt
  */
 export function elastic({ oscillations = 3, springiness = 3 }: {
-  oscillations: number
-  springiness: number
-}): EasingFunction {
+  oscillations?: number
+  springiness?: number
+} = {}): EasingFunction {
   const getAmplitude: EasingFunction = springiness === 0
                                      ? normalizedTime => normalizedTime
                                      : exponential(springiness)

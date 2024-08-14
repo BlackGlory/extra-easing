@@ -13,7 +13,7 @@ import { EasingFunction } from '@src/types.js'
 export function bounce({ bounces = 3, bounciness = 2 }: {
   bounces?: number
   bounciness?: number
-}): EasingFunction {
+} = {}): EasingFunction {
   assert(bounciness > 1, 'The parameter bounciness must be greater than 1')
 
   const c = (1 - bounciness ** bounces)
