@@ -18,7 +18,7 @@ export function linear(...points: LinearPoint[]): EasingFunction {
   const lastPoint = last(points)
   assert(lastPoint)
   const [, lastPointPercentage] = lastPoint
-  assert(lastPointPercentage, 'The percentage of the last point must be 1')
+  assert(lastPointPercentage === 1, 'The percentage of the last point must be 1')
 
   for (let i = 1; i < points.length - 1; i++) {
     const [, currentPercentage] = points[i]
