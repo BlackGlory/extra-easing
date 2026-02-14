@@ -46,4 +46,12 @@ describe('exponential', () => {
     expect(fn(0.8)).toBeLessThan(0.2)
     expect(fn(1)).toBe(1)
   })
+
+  test('edge: exponent = 0', () => {
+    const fn = exponential(0)
+
+    expect(fn(0)).toBe(0)
+    expect(fn(0.5)).toBe(0.5)
+    expect(fn(1)).toBe(1)
+  })
 })
