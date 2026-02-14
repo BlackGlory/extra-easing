@@ -1,3 +1,4 @@
+import { assert } from '@blackglory/prelude'
 import { EasingFunction } from '@src/types.js'
 
 export enum StepPosition {
@@ -13,9 +14,14 @@ export enum StepPosition {
 const SCALE = 100
 
 /**
+ * @see https://drafts.csswg.org/css-easing/#easing-functions
  * @see https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function#steps_easing_function
  */
 export function steps(steps: number, position: StepPosition): EasingFunction {
+  // CSS规范要求.
+  assert(Number.isInteger(steps), 'The parameter steps must be an integer')
+  assert(steps >= 1, 'The parameter steps must be at least 1')
+
   switch (position) {
     case StepPosition.JumpStart: {
       const timePerStep = 1 / steps
@@ -40,6 +46,12 @@ export function steps(steps: number, position: StepPosition): EasingFunction {
       }
     }
     case StepPosition.JumpNone: {
+      // CSS规范要求, 也用于避免除零问题.
+      assert(
+        steps >= 2
+      , 'The parameter steps must be at least 2 if the position is JumpNone'
+      )
+
       const timePerStep = 1 / steps
       const valuePerStep = 1 / (steps - 1)
 
