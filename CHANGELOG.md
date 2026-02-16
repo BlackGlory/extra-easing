@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/BlackGlory/extra-easing/compare/v0.1.2...v0.1.3) (2026-02-16)
+
+
+### Bug Fixes
+
+* **power:** prevent power is negative value ([fb64898](https://github.com/BlackGlory/extra-easing/commit/fb64898b60e268d08b35de58056e7af0bce55bf4))
+
 ### [0.1.2](https://github.com/BlackGlory/extra-easing/compare/v0.1.1...v0.1.2) (2026-02-14)
 
 
