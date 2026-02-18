@@ -5,8 +5,14 @@ import { assert } from '@blackglory/prelude'
 import { EasingFunction } from '@src/types.js'
 
 /**
- * @param bounces The number of bounces. The value must be greater than or equal to zero. Negative values resolve to zero. The default is 3.
- * @param bounciness a value that specifies how bouncy the bounce animation is. Low values of this property result in bounces with little lose of height between bounces (more bouncy) while high values result in dampened bounces (less bouncy).
+ * @param bounces
+ * The number of bounces.
+ * The value must be greater than or equal to zero.
+ * Negative values resolve to zero.
+ * The default is 3.
+ * @param bounciness
+ * A value that specifies how bouncy the bounce animation is.
+ * Low values of this property result in bounces with little lose of height between bounces (more bouncy) while high values result in dampened bounces (less bouncy).
  * @see https://learn.microsoft.com/en-us/dotnet/api/system.windows.media.animation.bounceease
  * @see https://www.desmos.com/calculator/1lqmrs2ps9
  */
